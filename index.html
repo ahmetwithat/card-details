@@ -69,16 +69,16 @@
               <legend>Exp. Date (MM/YY)</legend>
               <div class="flex-row input-expiration">
                 <label class="sr-only" for="exp-month">Expiration Month</label>
-                <div class="input-bg"><input class="js-input-exp-month" id="exp-month" type="text" placeholder="MM" maxlength="2" aria-invalid="false" aria-errormessage="exp-month-error"></div>
+                <div class="input-bg"><input class="js-input-exp-month" id="exp-month" type="text" inputmode="numeric" placeholder="MM" maxlength="2" aria-invalid="false" aria-errormessage="exp-month-error"></div>
                 <label class="sr-only" for="exp-year">Expiration Year</label>
-                <div class="input-bg"><input class="js-input-exp-year" id="exp-year" type="text" placeholder="YY" maxlength="2" aria-invalid="false" aria-errormessage="exp-year-error"></div>
+                <div class="input-bg"><input class="js-input-exp-year" id="exp-year" type="text" inputmode="numeric" placeholder="YY" maxlength="2" aria-invalid="false" aria-errormessage="exp-year-error"></div>
               </div>
               <p aria-hidden="true" class="js-exp-year-error input-error-message" id="exp-year-error"></p>
               <p aria-hidden="true" class="js-exp-month-error input-error-message" id="exp-month-error"></p>
             </fieldset>
             <div class="flex-col cvc-wrapper">
               <label for="cvc">CVC</label>
-              <div class="input-bg"><input class="js-input-cvc" type="text" id="cvc" placeholder="e.g. 123" maxlength="3" aria-invalid="false" aria-errormessage="cvc-error"></div>
+              <div class="input-bg"><input class="js-input-cvc" type="text" id="cvc" inputmode="numeric" placeholder="e.g. 123" maxlength="3" aria-invalid="false" aria-errormessage="cvc-error"></div>
               <p aria-hidden="true" class="js-cvc-error input-error-message" id="cvc-error"></p>
             </div>
           </div>
