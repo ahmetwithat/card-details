@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cards</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <main>
+    <div class="card-details">
+      <div class="cards-grid">
+        <div class="card-back">
+      
+        </div>
+        <div class="card-front">
+        </div>
+      </div>
+      <form class="card-details-form flex-col">
+        <div class="flex-col">
+          <label for="ch-name">Cardholder Name</label>
+          <div class="input-bg"><input type="text" name="cardholder name" id="ch-name" placeholder="e.g. Jane Appleseed"></div>
+        </div>
+        <div class="flex-col">
+          <label for="ccn">Card Number</label>
+          <div class="input-bg"><input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="e.g. 1234 5678 9123 0000"></div>
+        </div>
+        <div class="exp-and-cvc flex-row">
+          <fieldset class="exp-field flex-col">
+            <legend>Exp. Date (MM/YY)</legend>
+            <div class="flex-row input-expiration">
+              <label class="sr-only" for="exp-month">Expiration Month</label>
+              <div class="input-bg"><input id="exp-month" type="number" placeholder="MM"></div>
+              <label class="sr-only" for="exp-year">Expiration Year</label>
+              <div class="input-bg"><input id="exp-year" type="number" placeholder="YY"></div>
+            </div>
+          </fieldset>
+          <div class="flex-col cvc-wrapper">
+            <label for="cvc">CVC</label>
+            <div class="input-bg"><input type="number" id="cvc" placeholder="e.g. 123"></div>
+          </div>
+        </div>
+        <input type="submit" value="Confirm">
+      </form>
+    </div>
+  </main>
+</body>
+</html>
